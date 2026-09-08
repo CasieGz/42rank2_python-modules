@@ -1,0 +1,22 @@
+[project]
+name = "Python8-ex1"
+version = "0.1.0"
+description = "Loading and analyzing matrix data with dependency checks"
+authors = [
+    { name = "Casie Lynn Garnatz", email = "casgarna@student.42berlin.de" }
+    ]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "requests",
+    "matplotlib",
+]
+
+# this project should not be built as an installable package 
+[tool.poetry]
+package-mode = false
+
+# backend: who is building and dependencys for it, so it will install them
+[build-system]
+requires = ["poetry-core>=2.0.0"]
